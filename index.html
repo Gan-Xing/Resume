@@ -496,6 +496,27 @@
             color: #333;
         }
 
+        .resume-link {
+            text-decoration: none; /* 去掉默认下划线 */
+            font-weight: bold;
+            color: #fff; /* 使用你定义的变量颜色 */
+            transition: color 0.3s ease;
+        }
+
+        .resume-link:hover {
+            color: var(--accent-color);
+            text-decoration: underline;
+        }
+
+        /* 确保链接在所有状态下都不会变成默认蓝色 */
+        .resume-link:visited {
+            color: #fff; /* 使用你定义的变量颜色 */
+        }
+
+        .resume-link:active {
+            color: var(--primary-color);
+        }
+
         /* 语言内容控制 - 添加法语支持 */
         .en,
         .fr {
@@ -1427,9 +1448,9 @@
         <!-- Footer -->
         <footer>
             <p>
-                <span class="cn">© 2025 甘星 - 本简历更新于2025年3月14日</span>
-                <span class="en">© 2025 Gan Xing - Last updated on March 14, 2025</span>
-                <span class="fr">© 2025 Gan Xing - Dernière mise à jour le 14 mars 2025</span>
+                <span class="cn">© 2025 甘星 - 本简历更新于2025年3月16日 | <a href="https://resume.ganxing.fun" target="_blank" class="resume-link">resume.ganxing.fun</a></span>
+                <span class="en">© 2025 Gan Xing - Last updated on March 16, 2025 | <a href="https://resume.ganxing.fun" target="_blank" class="resume-link">Online Resume</a></span>
+                <span class="fr">© 2025 Gan Xing - Dernière mise à jour le 16 mars 2025 | <a href="https://resume.ganxing.fun" target="_blank" class="resume-link">CV en Ligne</a></span>
             </p>
         </footer>
     </div>
